@@ -1,0 +1,1064 @@
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Noto Serif JP', serif;
+    background-image: url(img/背景.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ヘッダー */
+
+header {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    padding: 2%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.logo-text a {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ハンバーガー */
+.hamburger {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    transition: all 1s;
+
+}
+
+.hamburger span:first-of-type {
+    top: 4px;
+}
+
+.hamburger span:nth-of-type(2) {
+    top: 13px;
+}
+
+.hamburger span:nth-of-type(3) {
+    top: 22px;
+}
+
+.open .hamburger span:nth-of-type(1) {
+    top: 50%;
+    left: 25%;
+    transform: rotate(1845deg);
+}
+
+.open .hamburger span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.open .hamburger span:nth-of-type(3) {
+    top: 50%;
+    left: 25%;
+    transform: rotate(-1845deg);
+}
+
+
+.navi {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 20px 25px;
+    z-index: 20;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+    z-index: 10;
+}
+
+.navi,
+.mask {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.7s;
+}
+
+.open .navi,
+.open .mask {
+    opacity: 1;
+    visibility: visible;
+}
+
+nav.navi {
+    display: block;
+}
+
+ul.menu {
+    text-align: center;
+    margin-top: 100px;
+}
+
+ul.menu li {
+    padding-top: 30px;
+}
+
+ul.menu li a {
+    font-size: 24px;
+}
+
+ul.menu li p {
+    color: white;
+}
+
+/* メイン */
+
+.mainvisual {
+    z-index: 0;
+    position: relative;
+}
+
+.mainvisual img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    display: block;
+}
+
+.title h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 130px;
+    color: white;
+}
+
+.concept {
+    height: 100vh;
+    position: relative;
+}
+
+video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.text-concept {
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.text-concept p {
+    color: white;
+    font-size: 26px;
+    margin: 40px 0;
+}
+
+.text-concept p br {
+    display: none;
+}
+
+
+/* フッター */
+
+footer {
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+footer ul {
+    border-left: 1px solid white;
+    padding-left: 30px;
+}
+
+footer ul:not(:first-of-type) {
+    margin-left: 150px;
+}
+
+footer ul li {
+    line-height: 2;
+}
+
+ul li a {
+    color: white;
+}
+
+.mark img {
+    width: 200px;
+    opacity: 0.8;
+    margin: 0 100px 0 30px;
+}
+
+.footer-section {
+    display: flex;
+}
+
+
+
+/* ---------------------------------------------------------------------- */
+
+
+
+/* 施設案内 */
+
+.logo-text2 a {
+    color: black;
+    font-size: 20px;
+}
+
+.hamburger2 {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger2 span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    position: absolute;
+    transition: all 1s;
+}
+
+.hamburger2 span:first-of-type {
+    top: 4px;
+}
+
+.hamburger2 span:nth-of-type(2) {
+    top: 13px;
+}
+
+.hamburger2 span:nth-of-type(3) {
+    top: 22px;
+}
+
+.open .hamburger2 span {
+    background-color: white;
+}
+
+.open .hamburger2 span:nth-of-type(1) {
+    top: 50%;
+    left: 25%;
+    transform: rotate(1845deg);
+}
+
+.open .hamburger2 span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.open .hamburger2 span:nth-of-type(3) {
+    top: 50%;
+    left: 25%;
+    transform: rotate(-1845deg);
+}
+
+.guide-text {
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 150px 0;
+    text-align: center;
+    line-height: 35px;
+    width: 100%;
+}
+
+.guide-text::before {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+
+.guide-text h2 {
+    width: 100%;
+    font-size: 35px;
+    font-weight: normal;
+}
+
+.guide-text h2 br,
+.guide-text p br {
+    display: none;
+}
+
+.guide-text p {
+    font-size: 18px;
+}
+
+.guide-text p:nth-of-type(1) {
+    padding-top: 35px;
+}
+
+/* 施設案内ーー各部屋 */
+
+.room-container2 {
+    display: none;
+}
+
+.room-container2 {
+    width: 100%;
+    margin-top: 100vh;
+    margin-bottom: 30px;
+}
+
+.room-area {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+section {
+    padding: 0 20px;
+}
+
+section.text {
+    width: 30%;
+}
+
+section.text h3,
+section.text p {
+    padding-top: 20px;
+}
+
+section.text h3 {
+    text-align: center;
+}
+
+section.text p span {
+    font-size: 12px;
+}
+
+
+section.image {
+    width: 70%;
+}
+
+section.image img {
+    border-radius: 20px;
+}
+
+.sp-only {
+    display: none;
+}
+
+/* ---------------------------------------------------------------- */
+
+.guide2 {
+    display: none;
+}
+
+.room-container {
+    position: relative;
+    width: 100%;
+    height: 450vh;
+    margin-top: 60vh;
+}
+
+/* ーーー 画像固定 ーーー */
+.image-wrapper {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 60%;
+    right: 20px;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-wrapper.active {
+    opacity: 1;
+}
+
+.room-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    border-radius: 20px;
+}
+
+.room-image.active {
+    opacity: 1;
+}
+
+/* ---テキスト側 ーーー */
+.text-wrapper {
+    width: 40%;
+    padding: 40px;
+}
+
+.room-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+.room-text:nth-of-type(1) {
+    margin-top: 50vh;
+}
+
+.room-text h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.room-text p {
+    font-size: 14px;
+    line-height: 2;
+}
+
+.room-text span {
+    font-size: 12px;
+}
+
+
+/* ------------------------------------------------------------------- */
+.legal-link {
+    max-width: 90%;
+    margin: 50px 50px 50px 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+
+.service,
+.policy {
+    width: 90%;
+    background-color: rgb(212, 204, 190);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.service h2,
+.policy h2 {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.service h2::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 1px;
+    background-color: black;
+}
+
+.policy h2::after {
+    position: absolute;
+    content: "";
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    height: 1px;
+    background-color: black;
+}
+
+.service ul li,
+.policy ul li {
+    line-height: 2;
+}
+
+/* ----------------------------------------------------------------------- */
+
+/* 料金表 */
+
+.price {
+    position: relative;
+}
+
+.price video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.price-section {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px 30px;
+    text-align: center;
+    color: black;
+}
+
+.price-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 30px;
+    color: black;
+    border-bottom: 1px solid black;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.price-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    border-collapse: collapse;
+}
+
+.price-table th,
+.price-table td {
+    border-bottom: 1px solid;
+    padding: 12px;
+}
+
+.price-table th {
+    /* background: white; */
+    color: black;
+    font-weight: 500;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 10px;
+}
+
+.rental {
+    margin-top: 30px;
+}
+
+.rental h3 {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.rental ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1rem;
+    color: black;
+}
+
+.rental li {
+    margin-bottom: 5px;
+}
+
+
+/* ----------------------------------------------------------------------------- */
+
+/* アクセス */
+
+h3.access {
+    position: relative;
+    text-align: center;
+    margin: 60px;
+    font-size: 32px;
+    padding-top: 20vh;
+}
+
+h3.access::before {
+    position: absolute;
+    content: "";
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+
+.access {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.access-info {
+    margin-left: 100px;
+}
+
+.access-info p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.access-info p.access-address {
+    padding-bottom: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+ul.contact-info li {
+    font-size: 24px;
+    line-height: 2;
+}
+
+.access-time {
+    background-image: url(img/時計.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.time p,
+.rest p {
+    font-size: 24px;
+    line-height: 2;
+    text-align: center;
+}
+
+.time {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.time::after {
+    position: absolute;
+    content: "";
+    top: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+
+.rest {
+    margin-bottom: 200px;
+}
+
+.contact-section {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 50px 20px;
+    background-color: #fdfaf6;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Noto Serif JP', serif;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-section p {
+    font-size: 16px;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #555;
+}
+
+
+
+@media(max-width: 960px) {
+
+    /* フッターーーーーーー */
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-section {
+        flex-direction: column;
+    }
+
+    footer ul:not(:first-of-type) {
+        margin-left: 0;
+    }
+
+    .mark img {
+        margin: 0 auto 20px;
+    }
+
+    footer ul {
+        border-left: none;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+    }
+
+    footer ul:not(:last-of-type) {
+        border-bottom: 1px solid white;
+    }
+
+
+
+    /* index---------- */
+
+    /* メインーーーー */
+
+    .title h2 {
+        font-size: 60px;
+    }
+
+    .text-concept {
+        writing-mode: vertical-rl;
+        top: 30%;
+        left: 50%;
+        transform: translate(-65%, -60%);
+        line-height: 2;
+    }
+
+    .text-concept p {
+        font-size: 18px;
+    }
+
+    .text-concept p br {
+        display: block;
+    }
+
+    /* 施設案内ーーーーーーーーーーー */
+
+    .guide {
+        display: none;
+    }
+
+    .guide2 {
+        display: block;
+    }
+
+    .guide-text {
+        width: 100%;
+    }
+
+    .guide-text h2 {
+        font-size: 26px;
+    }
+
+    .guide-text h2 br,
+    .guide-text p br {
+        display: block;
+    }
+
+    .guide-text p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .room-container2 {
+        display: block;
+    }
+
+    .room-area {
+        flex-direction: column-reverse;
+    }
+
+    .room-area:not(:first-child) {
+        margin-top: 70px;
+    }
+
+    section.image {
+        width: 100%;
+    }
+
+    section.text {
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section.text h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    section.text p {
+        font-size: 14px;
+        padding: 0 10px 10px;
+    }
+
+    .room-container {
+        display: none;
+    }
+
+
+
+
+    .sp-only {
+        display: block;
+    }
+
+    .legal-link {
+        max-width: 500px;
+        padding: 20px;
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .service,
+    .policy {
+        width: 100%;
+        padding: 25px;
+    }
+
+    .service h2,
+    .policy h2 {
+        position: relative;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .service h2::after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60%;
+        height: 1px;
+        background-color: black;
+    }
+
+    .policy h2::after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40%;
+        height: 1px;
+        background-color: black;
+    }
+
+    /* .service ul,
+    .policy ul {
+    } */
+
+    .service ul li,
+    .policy ul li {
+        font-size: 14px;
+        padding-left: 20%;
+    }
+
+    /* 料金表ーーーーーーーーーーーーーーーーーーー */
+
+    .price-section {
+        position: absolute;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 30px;
+        padding: 0 30px;
+        text-align: center;
+        color: black;
+        max-width: 450px;
+    }
+
+    .price-table {
+        width: 80%;
+    }
+
+    .price-table th,
+    .price-table td {
+        font-size: 14px;
+        width: 100%;
+    }
+
+    .price-table th {
+        padding: 8px;
+    }
+
+    th.girl {
+        font-size: 8px;
+    }
+
+    .rental ul li {
+        font-size: 14px;
+    }
+
+    /* アクセスーーーーーーーーーーーーーーーーーーーー */
+
+    h3.access {
+        font-size: 24px;
+    }
+
+    .access {
+        flex-direction: column-reverse;
+    }
+
+    .access iframe {
+        width: 90%;
+        height: 300px;
+        margin-top: 60px;
+    }
+
+    .access-info {
+        margin: 0 auto;
+    }
+
+    .access-info p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    ul.contact-info li {
+        font-size: 16px;
+        line-height: 2;
+    }
+
+    .access-time {
+        background-image: url(img/時計.jpg);
+        background-size: cover;
+        background-position: 20% center;
+        height: 100vh;
+    }
+
+    .time p,
+    .rest p {
+        font-size: 16px;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .time {
+        position: relative;
+        margin-bottom: 50px;
+    }
+
+    .time::after {
+        position: absolute;
+        content: "";
+        top: 90px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 1px;
+        background-color: black;
+    }
+
+    .rest {
+        margin-bottom: 200px;
+    }
+}
+
